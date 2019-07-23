@@ -1,0 +1,74 @@
+{
+    "name": "Report",
+    "options": {
+      "idInjection": true,
+      "mysql": {
+        "schema": "loopback-example-mysql",
+        "table": "report"
+      }
+    },
+
+    "properties": {
+      "nama_report": {
+        "type": "String", 
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "nama_report",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+      "subjek_report": {
+        "type": "String",
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "subjek_report",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+      "departemen": {
+        "type": "String",
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "departemen",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+      "isi_report":{
+          "type": "String",
+          "required": true,
+          "length": 100,
+          "precision": 10,
+          "scale": 0,
+          "mysql":{
+             "columnName":"isi_report",
+             "dataType":"varchar",
+             "dataLength":100,
+             "dataPrecision":10,
+             "dataScale":0,
+             "nullable":"N" 
+        }
+      }
+
+    }
+  }
