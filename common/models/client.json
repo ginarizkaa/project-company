@@ -1,5 +1,6 @@
 {
     "name": "Client",
+    "base": "PersistedModel",
     "options": {
       "idInjection": true,
       "mysql": {
@@ -69,5 +70,10 @@
           "nullable":"N" 
         }
       }
-    }
-  }
+    },
+
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": []
+}

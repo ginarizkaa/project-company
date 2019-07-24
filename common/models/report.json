@@ -1,5 +1,6 @@
 {
     "name": "Report",
+    "base": "PersistedModel",
     "options": {
       "idInjection": true,
       "mysql": {
@@ -68,7 +69,41 @@
              "dataScale":0,
              "nullable":"N" 
         }
+      },
+      "id_client": {
+        "type": "Number",
+        "required": true,
+        "length": 11,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "id_client",
+          "dataType": "int",
+          "dataLength": 11,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+      "id_employee": {
+        "type": "Number",
+        "required": true,
+        "length": 11,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "id_employee",
+          "dataType": "int",
+          "dataLength": 11,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
       }
+    },
 
-    }
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": []  
   }

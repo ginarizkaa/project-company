@@ -54,5 +54,16 @@
           "nullable": "N"
         }
       }
+    },
+
+    "validations": [],
+    "relations": {
+      "employees": {
+        "type": "hasMany",
+        "model": "Client",
+        "foreignKey": "id_employee",
+        "through": "Report"
+      } 
     }
-  }
+
+}
