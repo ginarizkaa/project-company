@@ -11,5 +11,13 @@
     "password": "password",
     "name": "mysql",
     "connector": "mysql"
+  },
+
+  "mongodb":{
+    "host": "localhost",
+    "port": 27017,
+    "database": "company",
+    "name": "mongodb",
+    "connector": "mongodb"
   }
 }

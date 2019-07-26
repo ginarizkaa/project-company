@@ -1,5 +1,5 @@
 {
-    "name": "Employee",
+    "name": "Project",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
@@ -7,16 +7,22 @@
     },
 
     "properties": {
-      "firstName": {
+      "projectName": {
         "type": "string" 
       },
-      "lastName": {
+      "capacity": {
+        "type": "number"
+      },
+      "startDate": {
+        "type": "date"
+      },
+      "endDate": {
+        "type": "date"
+      },
+      "status": {
         "type": "string"
       },
-      "email": {
-        "type": "string"
-      },
-      "phone": {
+      "paymentStatus": {
         "type": "string"
       },
       "createAt": {
@@ -24,18 +30,14 @@
         "defaultFn": "now"
       }
     },
+    
     "validations": [],
     "relations": {
-      "project": {
-        "type": "belongsTo",
-        "model": "Project",
-        "foreignKey": "projectId" 
-      },
-      "roles": {
-        "type": "hasMany",
-        "model": "Roles",
-        "foreignKey": "employeeId" 
-      }
+        "employee": {
+            "type": "hasMany",
+            "model": "Employee",
+            "foreignKey": "projectId" 
+          }
     },
     "acls": [],
     "methods": {}
